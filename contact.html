@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+   <title>Ben Cosbey - Contact</title>
+   <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon"/>
+    
+<style>
+  body{
+    background-image: url('img/Thore.png');
+    color: white
+  }
+  .top{
+   background-color: black;
+   flex: content;
+  }
+  .top h1{
+    font-family: cursive;
+    font-weight: 600;
+    color: white;
+  }
+  .quote {
+    font-family: cursive;
+    color: white;
+    text-align: right;
+  }
+</style>
+
+<header> 
+  <div class="top">
+    <h1>Ben Cosbey Contact Page</h1> 
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">My Work</a>
+
+    <form action="" method="post" id="contact-form">
+    <label class="standard-label">Email: </label>
+    <input type="email" required>
+
+    <label class="standard-label">Telephone: </label>
+    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+    <label>Message: </label>
+    <textarea maxlength="240" required></textarea>
+    <input type="submit" value="Send message">
+</header>    
+<div class="quote">
+  <p>photo by Ryan Exstrom</p>
+</div>
+
+<script src="tota11y-0.1.6/build/tota11y.min.js"></script>
+
+</body>
+</html>

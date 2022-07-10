@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon"/>
+	<title>Ben Cosbey - My Work</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .grid > div{
+            background-color: gainsboro;
+            padding: 1em;
+        }
+
+        .grid> div:nth-child(odd){
+            background-color: grey;
+        }
+        
+        @media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+.top{
+  background-color: black;
+  flex-shrink: inherit;
+}
+.top h1{
+  font-family: cursive;
+  font-weight: 600;
+  color: white;
+}
+   </style>
+
+</head>
+<header> 
+  <div class="top">
+    <h1>Ben Cosbey Portfolio</h1> </div>
+    <div class="flex-container">
+    <role="menubar">
+    <div><a href="index.html" role="menuitem">Home</a></div>   
+    <div><a href="about.html" role="menuitem">About</a></div>
+    <div><a href="contact.html" role="menuitem">Contact</a></div> 
+    </div>
+  </header>
+<body>
+    <div class="grid">
+        <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odit consequuntur incidunt maxime inventore sed, dolore, ut illum reiciendis placeat voluptas sequi explicabo. Hic quisquam quidem laborum. Pariatur, amet similique.
+        </div>
+        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis beatae quod nulla at repellat amet quaerat voluptas culpa mollitia eos. A voluptatibus saepe officia, ratione temporibus explicabo distinctio quos?
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veniam sunt deleniti eveniet voluptatibus nulla debitis atque ratione quisquam eligendi ad quo blanditiis aut unde similique, adipisci corporis sequi aliquid.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ab quae non a sunt inventore deserunt tenetur voluptas vel minus ullam aliquam odio, reiciendis commodi officiis magnam ipsam enim distinctio.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor soluta voluptatum ex reiciendis recusandae veritatis beatae, nulla, ab, doloribus id numquam distinctio! Repellat numquam voluptatem nam doloremque vel repudiandae.</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, ratione impedit asperiores quibusdam dignissimos magni hic voluptas dolore unde est ipsum libero eius. Assumenda quia laboriosam facilis impedit eaque dicta!</div>
+        </div>
+</body>
+</html>
